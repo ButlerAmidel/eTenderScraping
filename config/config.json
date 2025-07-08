@@ -1,0 +1,34 @@
+{
+    "scraping": {
+        "dateFrom": "2025-07-08",
+        "dateTo": "2025-07-08",
+        "url": "https://www.etenders.gov.za/Home/opportunities"
+    },
+    "browser": {
+        "headless": false,
+        "maximized": true,
+        "disableExtensions": true,
+        "disableInfobars": true
+    },
+    "timing": {
+        "pageLoadWait": 7,
+        "modalRemovalWait": 1,
+        "expandRowWait": 3,
+        "collapseRowWait": 2,
+        "nextPageWait": 4,
+        "retryDelay": 2.5
+    },
+    "retry": {
+        "maxRetries": 3,
+        "staleElementRetries": 3
+    },
+    "output": {
+        "dateSpecificFile": "data/tenders_{date}.xlsx",
+        "cumulativeFile": "data/master_tenders.xlsx",
+        "dateFormat": "%d_%m_%Y"
+    },
+    "logging": {
+        "level": "INFO",
+        "file": "logs/scraper.log"
+    }
+} 
